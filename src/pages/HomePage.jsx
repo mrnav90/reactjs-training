@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {BlogLayout} from 'components/Layout';
 
 export default class HomePage extends Component {
   constructor(props, context) {
@@ -7,7 +8,9 @@ export default class HomePage extends Component {
 
   render() {
     return (
-      <h2>Hello world - Home</h2>
+      <BlogLayout>
+
+      </BlogLayout>
     );
   }
 }
