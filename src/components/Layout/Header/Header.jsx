@@ -1,4 +1,8 @@
 import React, {Component} from 'react';
+import Logo from 'assets/images/logo.png';
+import PostImage1 from 'assets/images/popular-post/1.jpg';
+import PostImage2 from 'assets/images/popular-post/2.jpg';
+import PostImage3 from 'assets/images/popular-post/3.jpg';
 
 export default class Header extends Component {
   constructor() {
@@ -11,7 +15,7 @@ export default class Header extends Component {
         <div className="container">
           <div className="logo text-center">
             <a href="index-2.html">
-              <img src="images/logo.png" alt="" />
+              <img src={Logo} alt="" />
             </a>
           </div>
         </div>
@@ -137,7 +141,7 @@ export default class Header extends Component {
                     <div className="post">
                       <div className="post-media">
                         <div className="image-wrap">
-                          <img src="images/popular-post/1.jpg" alt="" />
+                          <img src={PostImage1} alt="" />
                         </div>
                       </div>
                       <div className="post-body">
@@ -154,7 +158,7 @@ export default class Header extends Component {
                     <div className="post">
                       <div className="post-media">
                         <div className="image-wrap">
-                          <img src="images/popular-post/2.jpg" alt="" />
+                          <img src={PostImage2} alt="" />
                         </div>
                       </div>
                       <div className="post-body">
@@ -171,7 +175,7 @@ export default class Header extends Component {
                     <div className="post">
                       <div className="post-media">
                         <div className="image-wrap">
-                          <img src="images/popular-post/3.jpg" alt="" />
+                          <img src={PostImage3} alt="" />
                         </div>
                       </div>
                       <div className="post-body">
@@ -188,7 +192,7 @@ export default class Header extends Component {
                     <div className="post">
                       <div className="post-media">
                         <div className="image-wrap">
-                          <img src="images/popular-post/1.jpg" alt="" />
+                          <img src={PostImage1} alt="" />
                         </div>
                       </div>
                       <div className="post-body">
@@ -205,7 +209,7 @@ export default class Header extends Component {
                     <div className="post">
                       <div className="post-media">
                         <div className="image-wrap">
-                          <img src="images/popular-post/2.jpg" alt="" />
+                          <img src={PostImage2} alt="" />
                         </div>
                       </div>
                       <div className="post-body">
@@ -231,8 +235,8 @@ export default class Header extends Component {
               <span className="icon-search">
                 <i className="fa fa-search" />
               </span>
-              <form action="http://xgio.net/winters/GET">
-                <input type="search" value="Search and hit enter" />
+              <form>
+                <input type="search"/>
               </form>
             </div>
             <div className="share-box">

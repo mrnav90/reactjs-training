@@ -1,11 +1,11 @@
-import 'bootstrap';
-// import 'libs/font-awesome.min.css';
-// import 'libs/owl.carousel.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+import 'owl-carousel/owl-carousel/owl.carousel.css';
 
-// import 'libs/jquery.owl.carousel.js';
-// import 'libs/jquery.tweet.min.js';
-// import 'libs/masonry.pkgd.min.js';
-// import 'libs/retina.min.js';
+import 'masonry-layout';
+import 'owl-carousel/owl-carousel/owl.carousel.js';
+import 'Tweet/twitter/jquery.tweet.min.js';
+import 'retinajs';
 
 import 'styles/main.scss';
 import 'styles/theme/script';
