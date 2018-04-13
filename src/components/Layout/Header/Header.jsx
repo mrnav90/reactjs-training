@@ -3,6 +3,9 @@ import Logo from 'assets/images/logo.png';
 import PostImage1 from 'assets/images/popular-post/1.jpg';
 import PostImage2 from 'assets/images/popular-post/2.jpg';
 import PostImage3 from 'assets/images/popular-post/3.jpg';
+import menu from './menu';
+import classNames from 'classnames';
+import {Link} from 'react-router-dom';
 
 export default class Header extends Component {
   constructor() {
@@ -28,208 +31,63 @@ export default class Header extends Component {
             </div>
             <div className="close-menu" />
             <ul className="navlist off-canvas">
-              <li className="menu-item-has-children current-menu-parent">
-                <a href="index-2.html">Home</a>
-                <span className="submenu-toggle">
-                  <i className="fa fa-angle-right" />
-                </span>
-                <ul className="sub-menu">
-                  <li className="back-mb">
-                    <a href="#">Back</a>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <a href="grid.html">Grid</a>
-                    <span className="submenu-toggle">
-                      <i className="fa fa-angle-right" />
-                    </span>
-                    <ul className="sub-menu">
-                      <li className="back-mb">
-                        <a href="#">Back</a>
-                      </li>
-                      <li>
-                        <a href="grid.html">Fullwidth</a>
-                      </li>
-                      <li>
-                        <a href="grid-rightsidebar.html">Right sidebar</a>
-                      </li>
-                      <li>
-                        <a href="grid-leftsidebar.html">Left sidebar</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <a href="list.html">List</a>
-                    <span className="submenu-toggle">
-                      <i className="fa fa-angle-right" />
-                    </span>
-                    <ul className="sub-menu">
-                      <li className="back-mb">
-                        <a href="#">Back</a>
-                      </li>
-                      <li>
-                        <a href="list.html">Fullwidth</a>
-                      </li>
-                      <li>
-                        <a href="list-rightsidebar.html">Right sidebar</a>
-                      </li>
-                      <li>
-                        <a href="list-leftsidebar.html">Left sidebar</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <a href="timeline.html">Timeline</a>
-                    <span className="submenu-toggle">
-                      <i className="fa fa-angle-right" />
-                    </span>
-                    <ul className="sub-menu">
-                      <li className="back-mb">
-                        <a href="#">Back</a>
-                      </li>
-                      <li>
-                        <a href="timeline.html">Fullwidth</a>
-                      </li>
-                      <li>
-                        <a href="timeline-rightsidebar.html">Right sidebar</a>
-                      </li>
-                      <li>
-                        <a href="timeline-leftsidebar.html">Left sidebar</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="menu-item-has-children current-menu-parent">
-                    <a href="index-2.html">Standard</a>
-                    <span className="submenu-toggle">
-                      <i className="fa fa-angle-right" />
-                    </span>
-                    <ul className="sub-menu">
-                      <li className="back-mb">
-                        <a href="#">Back</a>
-                      </li>
-                      <li>
-                        <a href="standard.html">Fullwidth</a>
-                      </li>
-                      <li className="current-menu-item">
-                        <a href="index-2.html">Right sidebar</a>
-                      </li>
-                      <li>
-                        <a href="standard-leftsidebar.html">Left sidebar</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="category.html">Category</a>
-              </li>
-              <li>
-                <a href="category.html">Restaurant</a>
-              </li>
-              <li className="megamenu col-5 menu-item-has-children">
-                <a href="category.html">Mega menu</a>
-                <span className="submenu-toggle">
-                  <i className="fa fa-angle-right" />
-                </span>
-                <ul className="sub-menu">
-                  <li className="back-mb">
-                    <a href="#">Back</a>
-                  </li>
-                  <li>
-                    <div className="post">
-                      <div className="post-media">
-                        <div className="image-wrap">
-                          <img src={PostImage1} alt="" />
-                        </div>
-                      </div>
-                      <div className="post-body">
-                        <div className="post-title">
-                          <h2>
-                            <a href="single.html">Ut sit amet massa</a>
-                          </h2>
-                        </div>
-                        <span className="post-date">March 05, 2015</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="post">
-                      <div className="post-media">
-                        <div className="image-wrap">
-                          <img src={PostImage2} alt="" />
-                        </div>
-                      </div>
-                      <div className="post-body">
-                        <div className="post-title">
-                          <h2>
-                            <a href="single.html">Ut sit amet massa</a>
-                          </h2>
-                        </div>
-                        <span className="post-date">March 05, 2015</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="post">
-                      <div className="post-media">
-                        <div className="image-wrap">
-                          <img src={PostImage3} alt="" />
-                        </div>
-                      </div>
-                      <div className="post-body">
-                        <div className="post-title">
-                          <h2>
-                            <a href="single.html">Ut sit amet massa</a>
-                          </h2>
-                        </div>
-                        <span className="post-date">March 05, 2015</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="post">
-                      <div className="post-media">
-                        <div className="image-wrap">
-                          <img src={PostImage1} alt="" />
-                        </div>
-                      </div>
-                      <div className="post-body">
-                        <div className="post-title">
-                          <h2>
-                            <a href="single.html">Ut sit amet massa</a>
-                          </h2>
-                        </div>
-                        <span className="post-date">March 05, 2015</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="post">
-                      <div className="post-media">
-                        <div className="image-wrap">
-                          <img src={PostImage2} alt="" />
-                        </div>
-                      </div>
-                      <div className="post-body">
-                        <div className="post-title">
-                          <h2>
-                            <a href="single.html">Ut sit amet massa</a>
-                          </h2>
-                        </div>
-                        <span className="post-date">March 05, 2015</span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="single.html">Single</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
+              {
+                menu.map((item, idx) => {
+                  return (
+                    <li key={idx}
+                      className={classNames({
+                        'menu-item-has-children': item.subMenu && item.subMenu.length > 0,
+                        'megamenu col-5 menu-item-has-children': !item.link && item.subMenu && item.subMenu.length > 0
+                      })}>
+                      <Link to={item.link ? item.link : ''}>{item.name}</Link>
+                      {
+                        item.link && item.subMenu && item.subMenu.length > 0 ? (
+                          <ul className="sub-menu">
+                            {
+                              item.subMenu.map((subItem, key) => {
+                                return (
+                                  <li key={key}>
+                                    <Link to={subItem.link}>{subItem.name}</Link>
+                                  </li>
+                                );
+                              })
+                            }
+                          </ul>
+                        ) : null
+                      }
+                      {
+                        !item.link && item.subMenu && item.subMenu.length > 0 ? (
+                          <ul className="sub-menu">
+                            {
+                              item.subMenu.map((subItem, key) => {
+                                return (
+                                  <li key={key}>
+                                    <div className="post">
+                                      <div className="post-media">
+                                        <div className="image-wrap">
+                                          <img src={subItem.image} alt="" />
+                                        </div>
+                                      </div>
+                                      <div className="post-body">
+                                        <div className="post-title">
+                                          <h2>
+                                            <Link to={subItem.link}>{subItem.title}</Link>
+                                          </h2>
+                                        </div>
+                                        <span className="post-date">{subItem.date}</span>
+                                      </div>
+                                    </div>
+                                  </li>
+                                );
+                              })
+                            }
+                          </ul>
+                        ) : null
+                      }
+                    </li>
+                  );
+                })
+              }
             </ul>
             <div className="search-box">
               <span className="icon-search">
