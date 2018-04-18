@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 import Logo from 'assets/images/logo.png';
-import PostImage1 from 'assets/images/popular-post/1.jpg';
-import PostImage2 from 'assets/images/popular-post/2.jpg';
-import PostImage3 from 'assets/images/popular-post/3.jpg';
 import menu from './menu';
 import classNames from 'classnames';
 import {Link} from 'react-router-dom';

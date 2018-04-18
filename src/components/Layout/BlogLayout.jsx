@@ -17,9 +17,7 @@ export default class BlogLayout extends Component {
     return (
       <MasterLayout>
         <Header/>
-        <div>
-          {childrenWithProps}
-        </div>
+        <div>{childrenWithProps}</div>
       </MasterLayout>
     );
   }
