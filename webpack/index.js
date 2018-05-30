@@ -25,7 +25,8 @@ const webpackConfig = {
       pages: path.resolve(__dirname, '../src/pages'),
       i18n: path.resolve(__dirname, '../i18n'),
       utils: path.resolve(__dirname, '../src/utils'),
-      assets: path.resolve(__dirname, '../assets')
+      assets: path.resolve(__dirname, '../assets'),
+      sagas: path.resolve(__dirname, '../src/sagas')
     }
   },
   node: {

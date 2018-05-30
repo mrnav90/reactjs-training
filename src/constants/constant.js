@@ -9,7 +9,7 @@ const I18N_DATA = {
   en: langEn,
   vi: langVi
 };
-const DEFAULT_LANGUAGE = 'vi';
+const DEFAULT_LANGUAGE = 'en';
 
 export {
   REQUEST_HEADER,

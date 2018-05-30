@@ -32,7 +32,9 @@
     "react-router-redux": "^4.0.8",
     "redux": "^3.7.2",
     "redux-api": "^0.11.1",
+    "redux-saga": "^0.16.0",
     "redux-thunk": "^2.2.0",
+    "regenerator-runtime": "^0.11.1",
     "retinajs": "^2.1.3",
     "universal-cookie": "^2.1.0",
     "validator": "^9.1.2"
